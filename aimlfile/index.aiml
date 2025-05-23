@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <!-- Greeting -->
+    <category>
+        <pattern>Hi *</pattern>
+        <template>
+            <random>
+                <li>Hello there!</li>
+                <li>Hey, how can I assist you?</li>
+                <li>What's up?</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>Hello *</pattern>
+        <template>
+            <srai>Hi *</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>Hey *</pattern>
+        <template>
+            <srai>Hi *</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>TURN ON LIGHT</pattern>
+        <template>Light is turned on</template>
+    </category>
+    <category>
+        <pattern>PLEASE TURN ON LIGHT</pattern>
+        <template>Light is turned on</template>
+    </category>
+    <category>
+        <pattern>TURN ON LIGHT PLEASE</pattern>
+        <template>Light is turned on</template>
+    </category>
+    <category>
+        <pattern>WOULD YOU PLEASE TURN ON LIGHT</pattern>
+        <template>Light is turned on</template>
+    </category>
+    <category>
+        <pattern>* TURN ON LIGHT *</pattern>
+        <template>Light is turned on</template>
+    </category>
+
+    <category>
+        <pattern>TURN OFF LIGHT</pattern>
+        <template>Light is turned off</template>
+    </category>
+    <category>
+        <pattern>PLEASE TURN OFF LIGHT</pattern>
+        <template>Light is turned off</template>
+    </category>
+    <category>
+        <pattern>TURN OFF LIGHT PLEASE</pattern>
+        <template>Light is turned off</template>
+    </category>
+    <category>
+        <pattern>WOULD YOU PLEASE TURN OFF LIGHT</pattern>
+        <template>Light is turned off</template>
+    </category>
+    <category>
+        <pattern>* TURN OFF LIGHT *</pattern>
+        <template>Light is turned off</template>
+    </category>
+
+    <category>
+        <pattern>TURN ON FAN</pattern>
+        <template>Fan is turned on</template>
+    </category>
+    <category>
+        <pattern>PLEASE TURN ON FAN</pattern>
+        <template>Fan is turned on</template>
+    </category>
+    <category>
+        <pattern>TURN ON FAN PLEASE</pattern>
+        <template>Fan is turned on</template>
+    </category>
+    <category>
+        <pattern>WOULD YOU PLEASE TURN ON FAN</pattern>
+        <template>Fan is turned on</template>
+    </category>
+    <category>
+        <pattern>* TURN ON FAN *</pattern>
+        <template>Fan is turned on</template>
+    </category>
+
+    <category>
+        <pattern>TURN OFF FAN</pattern>
+        <template>Fan is turned off</template>
+    </category>
+    <category>
+        <pattern>PLEASE TURN OFF FAN</pattern>
+        <template>Fan is turned off</template>
+    </category>
+    <category>
+        <pattern>TURN OFF FAN PLEASE</pattern>
+        <template>Fan is turned off</template>
+    </category>
+    <category>
+        <pattern>WOULD YOU PLEASE TURN OFF FAN</pattern>
+        <template>Fan is turned off</template>
+    </category>
+    <category>
+        <pattern>* TURN OFF FAN *</pattern>
+        <template>Fan is turned off</template>
+    </category>
+
+    <!-- Name Handling -->
+    <category>
+        <pattern>My name is *</pattern>
+        <template>
+            <random>
+                <li>Hello there, <star/><set name="humanname"><star/></set></li>
+                <li>What's up <star/><set name="humanname"><star/></set></li>
+                <li>How may I assist you, <star/><set name="humanname"><star/></set>?</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>What is my name</pattern>
+        <template>
+            <set name="username"><get name="username"/></set>
+            Your name is <get name="username"/>.
+        </template>
+    </category>
+
+    <!-- Web Development and Services -->
+    <category>
+        <pattern>What is Web Development *</pattern>
+        <template>
+            Web Development is the building and maintenance of websites.
+        </template>
+    </category>
+    <category>
+        <pattern>What service do you provide *</pattern>
+        <template>
+            We provide the following services:<br/>
+            1. UI/UX Design<br/>
+            2. Frontend Development<br/>
+            3. Code Debugging<br/>
+            4. Chatbot Development<br/>
+            5. Email Templating<br/>
+            6. Website Development<br/>
+            7. Backend Development
+        </template>
+    </category>
+    <category>
+        <pattern>Service provide *</pattern>
+        <template>
+            <srai>What service do you provide *</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>Services</pattern>
+        <template>
+            <srai>What service do you provide *</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>Services*</pattern>
+        <template>
+            <srai>What service do you provide *</srai>
+        </template>
+    </category>
+
+    <!-- Frontend and Backend Explanations -->
+    <category>
+        <pattern>What do you mean by Frontend *</pattern>
+        <template>
+            Front-end web development is the development of the graphical user interface of a website, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that website.
+        </template>
+    </category>
+    <category>
+        <pattern>What is Frontend*</pattern>
+        <template>
+            Front-end web development is the development of the graphical user interface of a website, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that website.
+        </template>
+    </category>
+    <category>
+        <pattern>What do you mean by Backend *</pattern>
+        <template>
+            The back end refers to parts of a computer application or a program's code that allow it to operate and that cannot be accessed by a user.
+        </template>
+    </category>
+    <category>
+        <pattern>Frontend *</pattern>
+        <template>
+            In Frontend development, we use HTML, CSS, JavaScript, PHP, and some of the JavaScript frameworks or libraries.
+        </template>
+    </category>
+    <category>
+        <pattern>JavaScript Framework *</pattern>
+        <template>
+            JavaScript Frameworks:<br/>
+            1. React.js<br/>
+            2. Angular.js<br/>
+            3. Vue.js<br/>
+            4. Next.js<br/>
+            5. Backbone.js
+        </template>
+    </category>
+    <category>
+        <pattern>JavaScript Frameworks *</pattern>
+        <template>
+            <srai>JavaScript Framework *</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>Backend Framework *</pattern>
+        <template>
+            Backend Frameworks:<br/>
+            1. Node.js<br/>
+            2. Laravel<br/>
+            3. Rails<br/>
+            4. Django<br/>
+            5. Flask
+        </template>
+    </category>
+    <category>
+        <pattern>Backend Frameworks *</pattern>
+        <template>
+            <srai>Backend Framework *</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>Which Frontend Framework do you prefer *</pattern>
+        <template>
+            React.js is preferred for its speed and suitability for single-page applications.<br/>
+            PHP is suitable for large data transfers.
+        </template>
+    </category>
+    <category>
+        <pattern>Which Backend Framework do you prefer *</pattern>
+        <template>
+            Node.js and Express.js are preferred.<br/>
+            PHP is also suitable for large data transfers and is cost-efficient.
+        </template>
+    </category>
+
+    <!-- Goodbye -->
+    <category>
+        <pattern>Bye *</pattern>
+        <template>
+            <random>
+                <li>See you, <get name="humanname"/></li>
+                <li>Ok, bye <get name="humanname"/></li>
+                <li>Bye <get name="humanname"/></li>
+            </random>
+        </template>
+    </category>
+</aiml>
